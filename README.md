@@ -5,10 +5,10 @@
 
 
 
-Colaboratori: <br><br>
+Colaboratori: <br>
 
-    Developer - Vlasceanu N. Ovidiu <br>
-    Manager - Mînecuta Razvan <br>
-    Tester - Vicentiu Muresan <br>
-    Documentatie - Gheorghe Stefan  <br>
+    Developer - Vlasceanu N. Ovidiu 
+    Manager - Mînecuta Razvan 
+    Tester - Vicentiu Muresan 
+    Documentatie - Gheorghe Stefan  
               
