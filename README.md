@@ -5,7 +5,8 @@
 
 
 
-Colaboratori: <br>
+Colaboratori: <br><br>
+
     Developer - Vlasceanu N. Ovidiu <br>
     Manager - Mînecuta Razvan <br>
     Tester - Vicentiu Muresan <br>
