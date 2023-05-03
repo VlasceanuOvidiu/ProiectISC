@@ -4,7 +4,19 @@
   border-width: 5px;
   border-color: #14141467
 }
+
 .search-bar{
   margin-left: 40%;
   margin-top: 5px;
+}
+
+.table-header{
+  background-color: rgba(121, 121, 121, 0.486);
+  color: rgb(0, 0, 0);
+}
+
+tr{
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
 }
