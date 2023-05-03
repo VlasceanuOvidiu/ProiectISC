@@ -3,6 +3,7 @@ import { db } from '../firebase';
 import { collection, onSnapshot, orderBy, query, where } from 'firebase/firestore';
 import { Line } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, LineController, PointElement, LineElement } from 'chart.js';
+import './web.css';
 
 Chart.register(CategoryScale, LinearScale, LineController, PointElement, LineElement);
 
