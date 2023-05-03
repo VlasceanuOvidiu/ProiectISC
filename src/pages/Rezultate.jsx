@@ -134,7 +134,7 @@ function Rezultate() {
             </tbody>
           </table>
 
-          <div className='my-8 w-full md:w-2/3 lg:w-3/4 xl:w-1/2 mx-auto min-h-1/2'>
+          <div className='my-8 w-full md:w-2/3 lg:w-3/4 xl:w-1/2 mx-auto min-h-1/2 table-background'>
             <Line data={chartData} options={chartOptions} />
           </div>
         </div>
