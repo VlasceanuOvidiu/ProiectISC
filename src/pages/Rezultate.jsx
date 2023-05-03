@@ -111,7 +111,7 @@ function Rezultate() {
 
   return (
     <div className='flex flex-col'>
-      <input type="text" value={searchName} onChange={handleSearchChange} placeholder="Search by name" className='w-1/4 border border-gray-400 rounded-md p-2 mb-4 search-bar' />
+      <input type="text" value={searchName} onChange={handleSearchChange} placeholder="Căutare după numele pacientului" className='w-1/4 border border-gray-400 rounded-md p-2 mb-4 search-bar' />
       {loading && <div>Loading...</div>}
       {!loading && text.length > 0 && (
         <div className="">
