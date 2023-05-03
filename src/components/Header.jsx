@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import './header.css';
 
 function Header() {
-
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    }
+  }, []);
 
     return (
          <div className='flex bg-gray-700 justify-center items-center p-4 text-white'>
