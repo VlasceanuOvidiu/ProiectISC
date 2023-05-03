@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase'
-import './introducere.css'
+import './Introducere.css'
 
 function Introducere() {
 
