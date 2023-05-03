@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <WiFi.h>
 
 const char* ssid = "Galaxy A416D98";
@@ -23,29 +22,4 @@ void setup(){
 }
 
 void loop(){}
-=======
-#include <WiFi.h>
 
-const char* ssid = "Galaxy A416D98";
-const char* password = "parolapas";
-
-void setup(){
-    Serial.begin(115200);
-    delay(1000);
-
-    WiFi.mode(WIFI_STA); //Optional
-    WiFi.begin(ssid, password);
-    Serial.println("\nConnecting");
-
-    while(WiFi.status() != WL_CONNECTED){
-        Serial.print(".");
-        delay(100);
-    }
-
-    Serial.println("\nConnected to the WiFi network");
-    Serial.print("Local ESP32 IP: ");
-    Serial.println(WiFi.localIP());
-}
-
-void loop(){}
->>>>>>> bfc3f6336778ae1fb272da03a6c0ea82c1ebdf79
