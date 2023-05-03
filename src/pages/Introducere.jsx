@@ -27,6 +27,8 @@ function Introducere() {
         setEmail('');
         setMessage(null);
     };
+    
+    const isDisabled = name === '' || email === '' || message === '';
 
     return (
         <div className="w-full min-h-screen bg-gray-400 p-12">
@@ -67,7 +69,11 @@ function Introducere() {
                 className="input-style"
               />
             </label>
-            <button className="mt-4 px-4 py-2 bg-red-500 border-black rounded-xl" type="submit">
+         <button
+              className="mt-4 px-4 py-2 bg-red-500 border-black rounded-xl"
+              type="submit"
+              disabled={isDisabled}
+            >
               Trimite
             </button>
           </form>
