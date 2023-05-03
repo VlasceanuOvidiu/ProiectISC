@@ -116,7 +116,7 @@ function Rezultate() {
       {!loading && text.length > 0 && (
         <div className="">
           <table className="table-auto border-collapse w-full">
-            <thead className="bg-gray-50">
+            <thead className="table-header">
               <tr>
                 <th className="border border-gray-300 px-4 py-2">Nume</th>
                 <th className="border border-gray-300 px-4 py-2">Nivel de oxigen</th>
