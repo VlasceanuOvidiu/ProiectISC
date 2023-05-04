@@ -8,6 +8,7 @@ function Introducere() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState(null);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -26,6 +27,7 @@ function Introducere() {
         setName('');
         setEmail('');
         setMessage(null);
+	setShowSuccessMessage(true);
     };
     
     const isDisabled = name === '' || email === '' || message === '';
@@ -86,8 +88,9 @@ function Introducere() {
                       <div class="fade-in"> </div>
                       <div class="fade-out"> </div>
 		          </div>
-		      </div>
-	       </div> 
+		   </div>
+	   </div> 
+	{showSuccessMessage && <p className="text-black-500 items-center justify-center ">Inregistrarea a fost facuta cu succes</p>}
         </div>
       );
 }
