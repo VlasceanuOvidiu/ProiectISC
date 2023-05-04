@@ -14,3 +14,58 @@ input[type="number"]:focus {
   outline: none;
   box-shadow: 0 0 0 5px rgba(239, 68, 68, 0.3);
 }
+.container{
+	margin: 0 auto;
+	text-align: center;
+}
+.heart-rate{
+	width: 150px;
+	height: 73px;
+	position: relative;
+	margin: 20px auto;
+}
+.fade-in{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgb(156 163 175);
+top: 0;
+right: 0;
+animation: heartRateIn 2.5s linear infinite;
+}
+
+.fade-out{
+position: absolute;
+width: 120%;
+height: 100%;
+background-color: rgb(156 163 175);
+top: 0;
+right: -120%;
+animation: heartRateOut 2.5s linear infinite;
+background: rgb(156 163 175);
+background: linear-gradient(to right,rgba(156 163 175)0%, rgba(156 163 175)80%,rgba(156 163 175)100%);
+}
+
+@keyframes heartRateIn{
+	0%{
+		width: 100%;
+	}
+	50%{
+		width: 0;
+	}
+	100%{
+		width: 0;
+	}
+}
+
+@keyframes heartRateOut{
+	0%{
+		left: -120%;
+	}
+	30%{
+		left: -120%;
+	}
+	100%{
+		left: 0;
+	}
+}
