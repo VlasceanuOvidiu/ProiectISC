@@ -6,8 +6,15 @@
 }
 
 .search-bar{
-  margin-left: 40%;
-  margin-top: 5px;
+  margin-left: 37%;
+  margin-top: 15px;
+  border-width: 2px;
+  border-color: gray;
+  margin-right: 38%;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .table-header{
