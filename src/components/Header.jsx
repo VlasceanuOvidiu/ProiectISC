@@ -14,7 +14,7 @@ function Header() {
          <div className='flex bg-gray-700 justify-center items-center p-4 text-white'>
             <div className='w-3/4 flex justify-center' style={{ marginLeft: '200px' }}>
                  <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginRight:'1%', marginTop: '0.5%'}}></i>
-                    <h1 className='text-3xl font-bold'>Health Monitor Web App</h1>
+                   <div className='animation'></div>
                  <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginLeft:'1%', marginTop: '0.5%'}}></i>
            </div>
                 <ul className='flex'>
