@@ -13,9 +13,9 @@ function Header() {
     return (
          <div className='flex bg-gray-700 justify-center items-center p-4 text-white'>
             <div className='w-3/4 flex justify-center' style={{ marginLeft: '200px' }}>
-                 <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginRight:'1%', marginTop: '0.5%'}}></i>
+                 <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginRight:'1%', marginTop: '0.5%' , paddingTop: '6px'}}></i>
                    <div className='animation'></div>
-                 <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginLeft:'1%', marginTop: '0.5%'}}></i>
+                 <i className="fas fa-medkit" style={{ fontSize: '24px', width: '24px', height: '24px', color: 'red', marginLeft:'1%', marginTop: '0.5%' , paddingTop: '6px'}}></i>
            </div>
                 <ul className='flex'>
                     <li className='px-4 cursor-pointer capitalize hover:scale-105 duration-200'>
