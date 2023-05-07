@@ -47,7 +47,7 @@ function Introducere() {
     setName(value);
     const nameRegex = /^[a-zA-Z]+(?: [a-zA-Z]+)?$/;
     if (!value.match(nameRegex)) {
-      setNameError('Introduceti un nume valid');
+      setNameError('Nume invalid');
     } else {
       setNameError('');
     }
@@ -56,10 +56,9 @@ function Introducere() {
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
-
     const emailRegex = /\S+@\S+\.\S+/;
     if (!value.match(emailRegex)) {
-      setEmailError('Introduceti o adresa de email valida');
+      setEmailError('Adresa de email invalida');
     } else {
       setEmailError('');
     }
