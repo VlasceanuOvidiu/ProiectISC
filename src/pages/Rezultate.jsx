@@ -73,7 +73,7 @@ function Rezultate() {
         {
           type: 'line',
           label: 'Limita de siguranta',
-          data: Array(text.length).fill(90),
+          data: Array(text.length).fill(50),
           fill: false,
           borderColor: 'red',
           tension: 0.1
@@ -97,14 +97,16 @@ function Rezultate() {
       y: {
         title: {
           display: true,
-          text: 'Nivel de oxigen (%)'
-        }
+          text: 'pulse (bpm)'
+        },
+        suggestedMin: 40, // Valoarea minimă sugerată pentru axa Y
+        suggestedMax: 120, // Valoarea maximă sugerată pentru axa Y
       }
     },
     plugins: {
       title: {
         display: true,
-        text: 'Nivel de oxigen in timp'
+        text: 'Puls in timp'
       }
     }
   };
@@ -118,16 +120,16 @@ function Rezultate() {
           <table className="table-auto border-collapse w-full">
             <thead className="table-header">
               <tr>
-                <th className="border border-gray-300 px-4 py-2">Nume</th>
-                <th className="border border-gray-300 px-4 py-2">Nivel de oxigen</th>
-                <th className="border border-gray-300 px-4 py-2">Date</th>
+                <th className="border border-gray-300 px-4 py-2">Nume pacient</th>
+                <th className="border border-gray-300 px-4 py-2">Puls    - batai pe minut -</th>
+                <th className="border border-gray-300 px-4 py-2">Momentul introducerii</th>
               </tr>
             </thead>
             <tbody>
               {text.map((message) => (
                 <tr key={message.id}>
                   <td className="border border-gray-300 px-4 py-2 capitalize">{message.name}</td>
-                  <td className="border border-gray-300 px-4 py-2">{message.text}%</td>
+                  <td className="border border-gray-300 px-4 py-2">{message.text}</td>
                   <td className="border border-gray-300 px-4 py-2">{new Date(message.createdAt.toDate()).toLocaleString()}</td>
                 </tr>
               ))}

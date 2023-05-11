@@ -8,7 +8,6 @@ function Introducere() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState(null);
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [pulse, setPulse] = useState('');
@@ -17,7 +16,7 @@ function Introducere() {
     e.preventDefault();
 
     const messageDB = {
-      text: message,
+      text: pulse,
       name: name,
       createdAt: serverTimestamp(),
 
@@ -29,7 +28,7 @@ function Introducere() {
 
     setName('');
     setEmail('');
-    setMessage(null);
+    setPulse('')
   };
 
   useEffect(() => {
@@ -39,7 +38,14 @@ function Introducere() {
       );
       setPulse(response.data.field1);
     };
-    fetchData();
+
+    fetchData(); // Apelăm fetchData pentru prima dată
+
+    const interval = setInterval(fetchData, 200); // Apelăm fetchData la fiecare secundă
+
+    return () => {
+      clearInterval(interval); // Curățăm intervalul când componenta este demontată
+    };
   }, []);
   
   const handleNameChange = (e) => {
@@ -64,11 +70,11 @@ function Introducere() {
     }
   };
 
-  const isDisabled = name === '' || email === '' || message === '';
+  const isDisabled = name === '' || email === '' || pulse === '';
 
   return (
-    <div className="w-full min-h-screen bg-gray-400 p-12">
-      <form onSubmit={handleSubmit} className="flex flex-col p-6 items-center justify-center">
+    <div className="w-full min-h-screen bg-gray-400 p-12 flex justify-center items-center">
+      <form onSubmit={handleSubmit} className="flex flex-col mb-48 items-center justify-center">
         <label className="block mb-4">
           <span className="text-gray-700 font-bold text-xl mb-2">Nume: <br /></span>
           <input type="text" value={name} onChange={handleNameChange} className="input-style" />
